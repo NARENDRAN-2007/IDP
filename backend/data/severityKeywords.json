@@ -1,0 +1,14 @@
+{
+  "unconscious":           { "level": 1, "specialty": "trauma" },
+  "not breathing":         { "level": 1, "specialty": "trauma" },
+  "chest pain":            { "level": 1, "specialty": "cardiac" },
+  "heavy bleeding":        { "level": 1, "specialty": "trauma" },
+  "accident":              { "level": 2, "specialty": "trauma" },
+  "difficulty breathing":  { "level": 2, "specialty": "general" },
+  "severe burns":          { "level": 2, "specialty": "burns" },
+  "labor pain":            { "level": 2, "specialty": "obstetric" },
+  "high fever":            { "level": 3, "specialty": "general" },
+  "fracture":              { "level": 3, "specialty": "general" },
+  "vomiting":              { "level": 4, "specialty": "general" },
+  "minor injury":          { "level": 4, "specialty": "general" }
+}

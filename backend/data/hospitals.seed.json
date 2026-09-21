@@ -1,0 +1,310 @@
+[
+  {
+    "id": "H001",
+    "name": "Government General Hospital",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "specialties": ["trauma", "cardiac", "general", "pediatric", "burns", "obstetric"],
+    "beds": {
+      "ER":      { "total": 10, "available": 3 },
+      "ICU":     { "total": 6,  "available": 1 },
+      "General": { "total": 40, "available": 12 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H002",
+    "name": "Apollo Hospitals Greams Road",
+    "lat": 13.0600,
+    "lng": 80.2500,
+    "specialties": ["cardiac", "trauma", "general", "burns"],
+    "beds": {
+      "ER":      { "total": 12, "available": 4 },
+      "ICU":     { "total": 10, "available": 2 },
+      "General": { "total": 50, "available": 15 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H003",
+    "name": "MGM Healthcare Aminjikarai",
+    "lat": 13.0750,
+    "lng": 80.2200,
+    "specialties": ["cardiac", "trauma", "obstetric", "general"],
+    "beds": {
+      "ER":      { "total": 8,  "available": 2 },
+      "ICU":     { "total": 5,  "available": 1 },
+      "General": { "total": 30, "available": 8 }
+    },
+    "empanelled": false,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H004",
+    "name": "Fortis Malar Hospital Adyar",
+    "lat": 13.0060,
+    "lng": 80.2570,
+    "specialties": ["trauma", "cardiac", "pediatric"],
+    "beds": {
+      "ER":      { "total": 6,  "available": 2 },
+      "ICU":     { "total": 4,  "available": 1 },
+      "General": { "total": 25, "available": 5 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H005",
+    "name": "Kauvery Hospital Alwarpet",
+    "lat": 13.0350,
+    "lng": 80.2500,
+    "specialties": ["general", "cardiac", "obstetric"],
+    "beds": {
+      "ER":      { "total": 5,  "available": 1 },
+      "ICU":     { "total": 4,  "available": 0 },
+      "General": { "total": 20, "available": 6 }
+    },
+    "empanelled": false,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H006",
+    "name": "MIOT International Manapakkam",
+    "lat": 13.0230,
+    "lng": 80.1870,
+    "specialties": ["trauma", "burns", "general"],
+    "beds": {
+      "ER":      { "total": 15, "available": 5 },
+      "ICU":     { "total": 8,  "available": 3 },
+      "General": { "total": 60, "available": 20 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H007",
+    "name": "Sri Ramachandra Medical Centre Porur",
+    "lat": 13.0380,
+    "lng": 80.1420,
+    "specialties": ["trauma", "cardiac", "burns", "pediatric", "obstetric", "general"],
+    "beds": {
+      "ER":      { "total": 20, "available": 6 },
+      "ICU":     { "total": 12, "available": 4 },
+      "General": { "total": 80, "available": 25 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H008",
+    "name": "Dr. Rela Institute & Medical Centre Chromepet",
+    "lat": 12.9520,
+    "lng": 80.1410,
+    "specialties": ["pediatric", "trauma", "general"],
+    "beds": {
+      "ER":      { "total": 10, "available": 3 },
+      "ICU":     { "total": 6,  "available": 2 },
+      "General": { "total": 40, "available": 10 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H009",
+    "name": "SIMS Hospital Vadapalani",
+    "lat": 13.0510,
+    "lng": 80.2120,
+    "specialties": ["cardiac", "trauma", "general"],
+    "beds": {
+      "ER":      { "total": 8,  "available": 2 },
+      "ICU":     { "total": 5,  "available": 1 },
+      "General": { "total": 35, "available": 9 }
+    },
+    "empanelled": false,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H010",
+    "name": "Billroth Hospital Shenoy Nagar",
+    "lat": 13.0780,
+    "lng": 80.2260,
+    "specialties": ["obstetric", "general", "burns"],
+    "beds": {
+      "ER":      { "total": 6,  "available": 1 },
+      "ICU":     { "total": 3,  "available": 1 },
+      "General": { "total": 25, "available": 7 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H011",
+    "name": "Kilpauk Medical College Hospital",
+    "lat": 13.0800,
+    "lng": 80.2430,
+    "specialties": ["burns", "trauma", "general", "obstetric"],
+    "beds": {
+      "ER":      { "total": 12, "available": 4 },
+      "ICU":     { "total": 7,  "available": 2 },
+      "General": { "total": 50, "available": 18 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H012",
+    "name": "Stanley Medical College Hospital Royapuram",
+    "lat": 13.1080,
+    "lng": 80.2880,
+    "specialties": ["trauma", "general", "pediatric"],
+    "beds": {
+      "ER":      { "total": 14, "available": 5 },
+      "ICU":     { "total": 8,  "available": 3 },
+      "General": { "total": 60, "available": 22 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H013",
+    "name": "Royapettah Government Hospital",
+    "lat": 13.0540,
+    "lng": 80.2640,
+    "specialties": ["trauma", "general", "burns"],
+    "beds": {
+      "ER":      { "total": 10, "available": 3 },
+      "ICU":     { "total": 5,  "available": 1 },
+      "General": { "total": 40, "available": 14 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H014",
+    "name": "Global Hospital Perumbakkam",
+    "lat": 12.9050,
+    "lng": 80.2030,
+    "specialties": ["trauma", "cardiac", "general"],
+    "beds": {
+      "ER":      { "total": 10, "available": 3 },
+      "ICU":     { "total": 6,  "available": 2 },
+      "General": { "total": 45, "available": 12 }
+    },
+    "empanelled": false,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H015",
+    "name": "Chettinad Health City Kelambakkam",
+    "lat": 12.7910,
+    "lng": 80.2190,
+    "specialties": ["general", "obstetric", "pediatric"],
+    "beds": {
+      "ER":      { "total": 12, "available": 4 },
+      "ICU":     { "total": 6,  "available": 2 },
+      "General": { "total": 50, "available": 16 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H016",
+    "name": "Sundaram Medical Foundation Anna Nagar",
+    "lat": 13.0860,
+    "lng": 80.2110,
+    "specialties": ["pediatric", "general", "obstetric"],
+    "beds": {
+      "ER":      { "total": 6,  "available": 2 },
+      "ICU":     { "total": 4,  "available": 1 },
+      "General": { "total": 30, "available": 8 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H017",
+    "name": "KMC Speciality Hospital Perambur",
+    "lat": 13.1120,
+    "lng": 80.2320,
+    "specialties": ["cardiac", "general"],
+    "beds": {
+      "ER":      { "total": 5,  "available": 1 },
+      "ICU":     { "total": 3,  "available": 1 },
+      "General": { "total": 20, "available": 5 }
+    },
+    "empanelled": false,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H018",
+    "name": "Vijaya Hospital Vadapalani",
+    "lat": 13.0500,
+    "lng": 80.2100,
+    "specialties": ["cardiac", "trauma", "general"],
+    "beds": {
+      "ER":      { "total": 8,  "available": 3 },
+      "ICU":     { "total": 4,  "available": 1 },
+      "General": { "total": 35, "available": 10 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H019",
+    "name": "Prashanth Super Speciality Velachery",
+    "lat": 12.9800,
+    "lng": 80.2220,
+    "specialties": ["obstetric", "general", "cardiac"],
+    "beds": {
+      "ER":      { "total": 6,  "available": 2 },
+      "ICU":     { "total": 3,  "available": 1 },
+      "General": { "total": 25, "available": 6 }
+    },
+    "empanelled": false,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H020",
+    "name": "Hindu Mission Hospital Tambaram",
+    "lat": 12.9230,
+    "lng": 80.1180,
+    "specialties": ["trauma", "general", "burns"],
+    "beds": {
+      "ER":      { "total": 10, "available": 3 },
+      "ICU":     { "total": 5,  "available": 2 },
+      "General": { "total": 40, "available": 12 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H021",
+    "name": "Government Peripheral Hospital Teynampet",
+    "lat": 13.0420,
+    "lng": 80.2450,
+    "specialties": ["general", "obstetric"],
+    "beds": {
+      "ER":      { "total": 4,  "available": 1 },
+      "ICU":     { "total": 2,  "available": 0 },
+      "General": { "total": 15, "available": 4 }
+    },
+    "empanelled": true,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  },
+  {
+    "id": "H022",
+    "name": "St. Isabel's Hospital Mylapore",
+    "lat": 13.0320,
+    "lng": 80.2680,
+    "specialties": ["obstetric", "pediatric", "general"],
+    "beds": {
+      "ER":      { "total": 5,  "available": 2 },
+      "ICU":     { "total": 3,  "available": 1 },
+      "General": { "total": 20, "available": 7 }
+    },
+    "empanelled": false,
+    "lastUpdated": "2026-09-21T10:00:00Z"
+  }
+]

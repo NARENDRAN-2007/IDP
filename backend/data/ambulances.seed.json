@@ -1,0 +1,12 @@
+[
+  { "id": "A001", "lat": 13.0800, "lng": 80.2700, "status": "free", "currentRequestId": null },
+  { "id": "A002", "lat": 13.0500, "lng": 80.2200, "status": "free", "currentRequestId": null },
+  { "id": "A003", "lat": 13.0100, "lng": 80.2000, "status": "free", "currentRequestId": null },
+  { "id": "A004", "lat": 12.9800, "lng": 80.2400, "status": "free", "currentRequestId": null },
+  { "id": "A005", "lat": 13.1200, "lng": 80.2100, "status": "free", "currentRequestId": null },
+  { "id": "A006", "lat": 13.0300, "lng": 80.2500, "status": "free", "currentRequestId": null },
+  { "id": "A007", "lat": 13.0600, "lng": 80.1800, "status": "free", "currentRequestId": null },
+  { "id": "A008", "lat": 12.9300, "lng": 80.1400, "status": "free", "currentRequestId": null },
+  { "id": "A009", "lat": 13.1500, "lng": 80.2800, "status": "free", "currentRequestId": null },
+  { "id": "A010", "lat": 13.0900, "lng": 80.2900, "status": "free", "currentRequestId": null }
+]
