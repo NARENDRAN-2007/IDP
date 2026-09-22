@@ -6,6 +6,7 @@ const { provisionalMatch, rematchWithSeverity } = require('../modules/hospitalMa
 const { classifySeverity } = require('../modules/severityClassifier');
 const { reserveBedProvisional, confirmReservation } = require('../modules/bedReservation');
 const { enqueueRequest } = require('../modules/requestQueue');
+const { getRouteInfo } = require('../modules/routingService');
 
 // Point 10: GET /api/emergency/requests lists all active emergency requests
 router.get('/requests', (req, res) => {
@@ -16,7 +17,7 @@ router.get('/', (req, res) => {
   res.json({ ok: true, data: Object.values(store.requests) });
 });
 
-router.post('/trigger', (req, res) => {
+router.post('/trigger', async (req, res) => {
   const { lat, lng, locationSource } = req.body;
   const request = {
     id: `REQ${Date.now()}`,
@@ -65,6 +66,11 @@ router.post('/trigger', (req, res) => {
     // ER hold failed, skip initial hold but preserve provisional match
   }
 
+  // Fetch real road-distance for the provisional hospital (display only)
+  const routeInfo = await getRouteInfo(
+    lat, lng, hospital.lat, hospital.lng
+  );
+
   res.json({ 
     ok: true, 
     data: { 
@@ -72,12 +78,13 @@ router.post('/trigger', (req, res) => {
       ambulance, 
       provisionalHospital: hospital, 
       holdId: initialHold ? initialHold.holdId : null,
-      holdExpiresAt: initialHold ? initialHold.expiresAt : null 
+      holdExpiresAt: initialHold ? initialHold.expiresAt : null,
+      routeInfo
     } 
   });
 });
 
-router.post('/:id/symptoms', (req, res) => {
+router.post('/:id/symptoms', async (req, res) => {
   const request = store.requests[req.params.id];
   if (!request) {
     return res.json({ ok: false, data: null, error: 'NOT_FOUND' });
@@ -107,6 +114,13 @@ router.post('/:id/symptoms', (req, res) => {
     const topCandidate = ranked[0];
     request.provisionalHospitalId = topCandidate.id;
     const hold = reserveBedProvisional(topCandidate, bedType, request, store);
+
+    // Fetch real road-distance for the top-ranked hospital only (display)
+    const routeInfo = await getRouteInfo(
+      request.patientLocation.lat, request.patientLocation.lng,
+      topCandidate.lat, topCandidate.lng
+    );
+
     res.json({ 
       ok: true, 
       data: { 
@@ -114,7 +128,8 @@ router.post('/:id/symptoms', (req, res) => {
         requiredSpecialty: specialty, 
         rematchedHospitalRanked: ranked, 
         holdId: hold.holdId, 
-        holdExpiresAt: hold.expiresAt 
+        holdExpiresAt: hold.expiresAt,
+        routeInfo
       } 
     });
   } catch (err) {
