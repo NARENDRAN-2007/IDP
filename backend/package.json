@@ -1,14 +1,45 @@
 {
-  "name": "emergency-response-backend",
+  "name": "hospital-dashboard-backend",
   "version": "1.0.0",
-  "description": "Availability-Aware Emergency Response & Bed Reservation Platform Backend",
-  "main": "server.js",
+  "description": "Availability-aware ER-desk Hospital Dashboard Backend",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node server.js"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "migrate": "tsx src/db/migrate.ts",
+    "seed": "tsx src/db/seed.ts",
+    "test": "vitest run"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.41.0",
     "cors": "^2.8.5",
-    "dotenv": "^18.0.2",
-    "express": "^4.19.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.2",
+    "ioredis-mock": "^8.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "pg-mem": "^3.0.4",
+    "pino": "^9.6.0",
+    "pino-http": "^10.4.0",
+    "socket.io": "^4.8.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^20.17.19",
+    "@types/pg": "^8.11.11",
+    "@types/supertest": "^6.0.2",
+    "pino-pretty": "^13.0.0",
+    "socket.io-client": "^4.8.4",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
   }
 }

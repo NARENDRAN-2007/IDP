@@ -1,0 +1,13 @@
+{
+  "name": "hospital-dashboard",
+  "version": "1.0.0",
+  "description": "Availability-Aware Emergency Response & Bed Reservation Platform",
+  "scripts": {
+    "dev": "node start-all.js",
+    "start": "node start-all.js",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix backend run build && npm --prefix frontend run build",
+    "test": "npm --prefix backend test"
+  }
+}

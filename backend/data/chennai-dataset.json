@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "area": "Chennai metropolitan area",
+    "hospitals": 22,
+    "ambulances": 10,
+    "bed_types": ["ER", "ICU", "General"],
+    "specialty_vocabulary": ["cardiac", "general", "neuro", "obstetric"],
+    "provenance": {
+      "hospital_name_address_lat_lng": "Google Places search results (Oct 2026)",
+      "specialties": "assigned from public hospital descriptions; some are assumptions, verify",
+      "empanelled": "SIMULATED flag, not verified against PM-JAY/CMCHIS",
+      "beds_doctors": "SIMULATED (seeded RNG 42)",
+      "users": "DEV ONLY - plaintext passwords, hash in seeder"
+    }
+  },
+  "hospitals": [
+    {
+      "id": "H001",
+      "name": "Apollo Hospitals Greams Road",
+      "lat": 13.063182,
+      "lng": 80.251538,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "Greams Lane, 21 Greams Rd, Thousand Lights West, Chennai 600006",
+      "beds": {
+        "ER": { "total": 30, "available": 5 },
+        "ICU": { "total": 53, "available": 1 },
+        "General": { "total": 207, "available": 34 }
+      }
+    },
+    {
+      "id": "H002",
+      "name": "MGM Healthcare",
+      "lat": 13.070989,
+      "lng": 80.221668,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "72 Nelson Manickam Rd, Aminjikarai, Chennai 600030",
+      "beds": {
+        "ER": { "total": 20, "available": 3 },
+        "ICU": { "total": 37, "available": 0 },
+        "General": { "total": 156, "available": 55 }
+      }
+    },
+    {
+      "id": "H003",
+      "name": "Rajiv Gandhi Government General Hospital",
+      "lat": 13.081416,
+      "lng": 80.277579,
+      "specialties": ["general", "cardiac", "neuro", "obstetric"],
+      "empanelled": true,
+      "ownership": "government",
+      "address": "Poonamallee High Road, Park Town, Chennai 600003",
+      "beds": {
+        "ER": { "total": 32, "available": 15 },
+        "ICU": { "total": 52, "available": 15 },
+        "General": { "total": 221, "available": 38 }
+      }
+    },
+    {
+      "id": "H004",
+      "name": "Tamil Nadu Government Multi Super Speciality Hospital",
+      "lat": 13.069188,
+      "lng": 80.273711,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "government",
+      "address": "Omandurar Government Estate, Anna Salai, Triplicane, Chennai 600002",
+      "beds": {
+        "ER": { "total": 24, "available": 11 },
+        "ICU": { "total": 53, "available": 16 },
+        "General": { "total": 181, "available": 97 }
+      }
+    },
+    {
+      "id": "H005",
+      "name": "Gleneagles Hospitals Perumbakkam",
+      "lat": 12.897849,
+      "lng": 80.206184,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "439 Cheran Nagar, Sholinganallur, Perumbakkam, Chennai 600100",
+      "beds": {
+        "ER": { "total": 23, "available": 0 },
+        "ICU": { "total": 31, "available": 12 },
+        "General": { "total": 347, "available": 80 }
+      }
+    },
+    {
+      "id": "H006",
+      "name": "VS Hospitals Kilpauk",
+      "lat": 13.07796,
+      "lng": 80.241539,
+      "specialties": ["general", "neuro"],
+      "empanelled": false,
+      "ownership": "private",
+      "address": "815/306 Poonamallee High Rd, Kilpauk, Chennai 600010",
+      "beds": {
+        "ER": { "total": 15, "available": 7 },
+        "ICU": { "total": 14, "available": 4 },
+        "General": { "total": 86, "available": 35 }
+      }
+    },
+    {
+      "id": "H007",
+      "name": "MIOT International",
+      "lat": 13.021389,
+      "lng": 80.185783,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "4/112 Mount Poonamallee Rd, Manapakkam, Chennai 600089",
+      "beds": {
+        "ER": { "total": 28, "available": 12 },
+        "ICU": { "total": 35, "available": 11 },
+        "General": { "total": 219, "available": 119 }
+      }
+    },
+    {
+      "id": "H008",
+      "name": "SIMS Hospitals Vadapalani",
+      "lat": 13.051692,
+      "lng": 80.211755,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "Jawaharlal Nehru Road, Vadapalani, Chennai 600026",
+      "beds": {
+        "ER": { "total": 32, "available": 8 },
+        "ICU": { "total": 38, "available": 5 },
+        "General": { "total": 383, "available": 201 }
+      }
+    },
+    {
+      "id": "H009",
+      "name": "Apollo Speciality Hospital OMR Perungudi",
+      "lat": 12.963119,
+      "lng": 80.245803,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": false,
+      "ownership": "private",
+      "address": "5/639 Rajiv Gandhi Salai, Perungudi, Chennai 600096",
+      "beds": {
+        "ER": { "total": 24, "available": 4 },
+        "ICU": { "total": 53, "available": 19 },
+        "General": { "total": 217, "available": 95 }
+      }
+    },
+    {
+      "id": "H010",
+      "name": "Kauvery Hospital Vadapalani",
+      "lat": 13.04771,
+      "lng": 80.204206,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "23/1 Arcot Rd, Vadapalani, Chennai 600026",
+      "beds": {
+        "ER": { "total": 28, "available": 9 },
+        "ICU": { "total": 54, "available": 7 },
+        "General": { "total": 178, "available": 30 }
+      }
+    },
+    {
+      "id": "H011",
+      "name": "Kauvery Hospital Mylapore",
+      "lat": 13.038238,
+      "lng": 80.257136,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": false,
+      "ownership": "private",
+      "address": "199 Luz Church Rd, CIT Colony, Mylapore, Chennai 600018",
+      "beds": {
+        "ER": { "total": 13, "available": 5 },
+        "ICU": { "total": 19, "available": 6 },
+        "General": { "total": 130, "available": 63 }
+      }
+    },
+    {
+      "id": "H012",
+      "name": "The Madras Medical Mission Hospital",
+      "lat": 13.08597,
+      "lng": 80.187141,
+      "specialties": ["general", "cardiac"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "Mogappair East, Chennai 600037",
+      "beds": {
+        "ER": { "total": 10, "available": 2 },
+        "ICU": { "total": 14, "available": 4 },
+        "General": { "total": 93, "available": 50 }
+      }
+    },
+    {
+      "id": "H013",
+      "name": "Medway Hospitals Kodambakkam",
+      "lat": 13.053632,
+      "lng": 80.22752,
+      "specialties": ["general", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "2/26 1st Main Rd, United India Colony, Kodambakkam, Chennai 600024",
+      "beds": {
+        "ER": { "total": 16, "available": 6 },
+        "ICU": { "total": 21, "available": 4 },
+        "General": { "total": 107, "available": 47 }
+      }
+    },
+    {
+      "id": "H014",
+      "name": "Chennai National Hospital",
+      "lat": 13.096446,
+      "lng": 80.291507,
+      "specialties": ["general", "cardiac"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "12 Jaffar Sarang St, Parrys, George Town, Chennai 600001",
+      "beds": {
+        "ER": { "total": 13, "available": 1 },
+        "ICU": { "total": 17, "available": 8 },
+        "General": { "total": 99, "available": 21 }
+      }
+    },
+    {
+      "id": "H015",
+      "name": "Brain and Spine Hospital CIT Nagar",
+      "lat": 13.028635,
+      "lng": 80.230643,
+      "specialties": ["general", "neuro"],
+      "empanelled": false,
+      "ownership": "private",
+      "address": "42/56 CIT 1st Main Rd, CIT Nagar West, Chennai 600035",
+      "beds": {
+        "ER": { "total": 4, "available": 2 },
+        "ICU": { "total": 8, "available": 4 },
+        "General": { "total": 33, "available": 13 }
+      }
+    },
+    {
+      "id": "H016",
+      "name": "Cloudnine Hospital OMR Thoraipakkam",
+      "lat": 12.942622,
+      "lng": 80.236815,
+      "specialties": ["obstetric"],
+      "empanelled": false,
+      "ownership": "private",
+      "address": "Old Mahabalipuram Road, Thoraipakkam, Chennai 600097",
+      "beds": {
+        "ER": { "total": 5, "available": 3 },
+        "ICU": { "total": 10, "available": 4 },
+        "General": { "total": 37, "available": 16 }
+      }
+    },
+    {
+      "id": "H017",
+      "name": "Motherhood Hospital Alwarpet",
+      "lat": 13.03124,
+      "lng": 80.251122,
+      "specialties": ["obstetric"],
+      "empanelled": false,
+      "ownership": "private",
+      "address": "542 TTK Rd, Alwarpet, Chennai 600018",
+      "beds": {
+        "ER": { "total": 7, "available": 0 },
+        "ICU": { "total": 7, "available": 1 },
+        "General": { "total": 39, "available": 5 }
+      }
+    },
+    {
+      "id": "H018",
+      "name": "Government Kasturba Gandhi Hospital for Women and Children",
+      "lat": 13.059529,
+      "lng": 80.278283,
+      "specialties": ["general", "obstetric"],
+      "empanelled": true,
+      "ownership": "government",
+      "address": "Victoria Hostel Rd, Chepauk, Triplicane, Chennai 600005",
+      "beds": {
+        "ER": { "total": 14, "available": 3 },
+        "ICU": { "total": 13, "available": 5 },
+        "General": { "total": 67, "available": 14 }
+      }
+    },
+    {
+      "id": "H019",
+      "name": "Government Royapettah Hospital",
+      "lat": 13.055279,
+      "lng": 80.264851,
+      "specialties": ["general"],
+      "empanelled": true,
+      "ownership": "government",
+      "address": "1 Westcott Rd, Royapettah, Chennai 600014",
+      "beds": {
+        "ER": { "total": 12, "available": 5 },
+        "ICU": { "total": 15, "available": 5 },
+        "General": { "total": 133, "available": 48 }
+      }
+    },
+    {
+      "id": "H020",
+      "name": "St Thomas Hospital",
+      "lat": 13.012147,
+      "lng": 80.196444,
+      "specialties": ["general", "cardiac", "obstetric"],
+      "empanelled": false,
+      "ownership": "private",
+      "address": "St Thomas Mount, Defence Colony 1st Ave, Seven Wells, Chennai 600016",
+      "beds": {
+        "ER": { "total": 16, "available": 5 },
+        "ICU": { "total": 13, "available": 2 },
+        "General": { "total": 115, "available": 30 }
+      }
+    },
+    {
+      "id": "H021",
+      "name": "Sugam Hospital Tiruvottiyur",
+      "lat": 13.165229,
+      "lng": 80.303256,
+      "specialties": ["general", "cardiac", "neuro"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "349 Thiruvottiyur High Rd, Tiruvottiyur, Chennai 600019",
+      "beds": {
+        "ER": { "total": 10, "available": 3 },
+        "ICU": { "total": 17, "available": 8 },
+        "General": { "total": 73, "available": 15 }
+      }
+    },
+    {
+      "id": "H022",
+      "name": "Mother's Speciality Hospital Ambattur",
+      "lat": 13.121067,
+      "lng": 80.14978,
+      "specialties": ["general", "obstetric"],
+      "empanelled": true,
+      "ownership": "private",
+      "address": "24/36 Old Town Ship, Office Rd, Ambattur, Chennai 600053",
+      "beds": {
+        "ER": { "total": 7, "available": 1 },
+        "ICU": { "total": 4, "available": 1 },
+        "General": { "total": 60, "available": 9 }
+      }
+    }
+  ],
+  "doctors_on_duty": [
+    { "id": 1, "hospital_id": "H001", "specialty": "general", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 2, "hospital_id": "H001", "specialty": "general", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 3, "hospital_id": "H001", "specialty": "cardiac", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 4, "hospital_id": "H001", "specialty": "cardiac", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 5, "hospital_id": "H001", "specialty": "neuro", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 6, "hospital_id": "H001", "specialty": "neuro", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 7, "hospital_id": "H002", "specialty": "general", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 8, "hospital_id": "H002", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 9, "hospital_id": "H002", "specialty": "cardiac", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 10, "hospital_id": "H002", "specialty": "cardiac", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 11, "hospital_id": "H002", "specialty": "neuro", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 12, "hospital_id": "H002", "specialty": "neuro", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 13, "hospital_id": "H003", "specialty": "general", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 14, "hospital_id": "H003", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 15, "hospital_id": "H003", "specialty": "cardiac", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 16, "hospital_id": "H003", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 17, "hospital_id": "H003", "specialty": "neuro", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 18, "hospital_id": "H003", "specialty": "neuro", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 19, "hospital_id": "H003", "specialty": "obstetric", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 20, "hospital_id": "H003", "specialty": "obstetric", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 21, "hospital_id": "H004", "specialty": "general", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 22, "hospital_id": "H004", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 23, "hospital_id": "H004", "specialty": "cardiac", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 24, "hospital_id": "H004", "specialty": "cardiac", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 25, "hospital_id": "H004", "specialty": "neuro", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 26, "hospital_id": "H004", "specialty": "neuro", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 27, "hospital_id": "H005", "specialty": "general", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 28, "hospital_id": "H005", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 29, "hospital_id": "H005", "specialty": "cardiac", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 30, "hospital_id": "H005", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 31, "hospital_id": "H005", "specialty": "neuro", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 32, "hospital_id": "H005", "specialty": "neuro", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 33, "hospital_id": "H006", "specialty": "general", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 34, "hospital_id": "H006", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 35, "hospital_id": "H006", "specialty": "neuro", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 36, "hospital_id": "H006", "specialty": "neuro", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 37, "hospital_id": "H007", "specialty": "general", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 38, "hospital_id": "H007", "specialty": "general", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 39, "hospital_id": "H007", "specialty": "cardiac", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 40, "hospital_id": "H007", "specialty": "cardiac", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 41, "hospital_id": "H007", "specialty": "neuro", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 42, "hospital_id": "H007", "specialty": "neuro", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 43, "hospital_id": "H008", "specialty": "general", "count": 5, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 44, "hospital_id": "H008", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 45, "hospital_id": "H008", "specialty": "cardiac", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 46, "hospital_id": "H008", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 47, "hospital_id": "H008", "specialty": "neuro", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 48, "hospital_id": "H008", "specialty": "neuro", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 49, "hospital_id": "H009", "specialty": "general", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 50, "hospital_id": "H009", "specialty": "general", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 51, "hospital_id": "H009", "specialty": "cardiac", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 52, "hospital_id": "H009", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 53, "hospital_id": "H009", "specialty": "neuro", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 54, "hospital_id": "H009", "specialty": "neuro", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 55, "hospital_id": "H010", "specialty": "general", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 56, "hospital_id": "H010", "specialty": "general", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 57, "hospital_id": "H010", "specialty": "cardiac", "count": 6, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 58, "hospital_id": "H010", "specialty": "cardiac", "count": 3, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 59, "hospital_id": "H010", "specialty": "neuro", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 60, "hospital_id": "H010", "specialty": "neuro", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 61, "hospital_id": "H011", "specialty": "general", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 62, "hospital_id": "H011", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 63, "hospital_id": "H011", "specialty": "cardiac", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 64, "hospital_id": "H011", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 65, "hospital_id": "H011", "specialty": "neuro", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 66, "hospital_id": "H011", "specialty": "neuro", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 67, "hospital_id": "H012", "specialty": "general", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 68, "hospital_id": "H012", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 69, "hospital_id": "H012", "specialty": "cardiac", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 70, "hospital_id": "H012", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 71, "hospital_id": "H013", "specialty": "general", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 72, "hospital_id": "H013", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 73, "hospital_id": "H013", "specialty": "neuro", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 74, "hospital_id": "H013", "specialty": "neuro", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 75, "hospital_id": "H014", "specialty": "general", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 76, "hospital_id": "H014", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 77, "hospital_id": "H014", "specialty": "cardiac", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 78, "hospital_id": "H014", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 79, "hospital_id": "H015", "specialty": "general", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 80, "hospital_id": "H015", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 81, "hospital_id": "H015", "specialty": "neuro", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 82, "hospital_id": "H015", "specialty": "neuro", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 83, "hospital_id": "H016", "specialty": "obstetric", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 84, "hospital_id": "H016", "specialty": "obstetric", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 85, "hospital_id": "H017", "specialty": "obstetric", "count": 1, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 86, "hospital_id": "H017", "specialty": "obstetric", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 87, "hospital_id": "H018", "specialty": "general", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 88, "hospital_id": "H018", "specialty": "general", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 89, "hospital_id": "H018", "specialty": "obstetric", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 90, "hospital_id": "H018", "specialty": "obstetric", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 91, "hospital_id": "H019", "specialty": "general", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 92, "hospital_id": "H019", "specialty": "general", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 93, "hospital_id": "H020", "specialty": "general", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 94, "hospital_id": "H020", "specialty": "general", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 95, "hospital_id": "H020", "specialty": "cardiac", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 96, "hospital_id": "H020", "specialty": "cardiac", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 97, "hospital_id": "H020", "specialty": "obstetric", "count": 4, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 98, "hospital_id": "H020", "specialty": "obstetric", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 99, "hospital_id": "H021", "specialty": "general", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 100, "hospital_id": "H021", "specialty": "general", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 101, "hospital_id": "H021", "specialty": "cardiac", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 102, "hospital_id": "H021", "specialty": "cardiac", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 103, "hospital_id": "H021", "specialty": "neuro", "count": 2, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 104, "hospital_id": "H021", "specialty": "neuro", "count": 2, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 105, "hospital_id": "H022", "specialty": "general", "count": 3, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 106, "hospital_id": "H022", "specialty": "general", "count": 1, "shift_start": "20:00", "shift_end": "08:00" },
+    { "id": 107, "hospital_id": "H022", "specialty": "obstetric", "count": 1, "shift_start": "08:00", "shift_end": "20:00" },
+    { "id": 108, "hospital_id": "H022", "specialty": "obstetric", "count": 1, "shift_start": "20:00", "shift_end": "08:00" }
+  ],
+  "users": [
+    { "id": "U001", "name": "ER Desk - Apollo Hospitals Greams Road", "email": "staff_h001@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H001", "password_plain": "Password123!" },
+    { "id": "U002", "name": "ER Desk - MGM Healthcare", "email": "staff_h002@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H002", "password_plain": "Password123!" },
+    { "id": "U003", "name": "ER Desk - Rajiv Gandhi Government General Hospital", "email": "staff_h003@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H003", "password_plain": "Password123!" },
+    { "id": "U004", "name": "ER Desk - Tamil Nadu Government Multi Super Speciality Hospital", "email": "staff_h004@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H004", "password_plain": "Password123!" },
+    { "id": "U005", "name": "ER Desk - Gleneagles Hospitals Perumbakkam", "email": "staff_h005@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H005", "password_plain": "Password123!" },
+    { "id": "U006", "name": "ER Desk - VS Hospitals Kilpauk", "email": "staff_h006@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H006", "password_plain": "Password123!" },
+    { "id": "U007", "name": "ER Desk - MIOT International", "email": "staff_h007@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H007", "password_plain": "Password123!" },
+    { "id": "U008", "name": "ER Desk - SIMS Hospitals Vadapalani", "email": "staff_h008@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H008", "password_plain": "Password123!" },
+    { "id": "U009", "name": "ER Desk - Apollo Speciality Hospital OMR Perungudi", "email": "staff_h009@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H009", "password_plain": "Password123!" },
+    { "id": "U010", "name": "ER Desk - Kauvery Hospital Vadapalani", "email": "staff_h010@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H010", "password_plain": "Password123!" },
+    { "id": "U011", "name": "ER Desk - Kauvery Hospital Mylapore", "email": "staff_h011@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H011", "password_plain": "Password123!" },
+    { "id": "U012", "name": "ER Desk - The Madras Medical Mission Hospital", "email": "staff_h012@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H012", "password_plain": "Password123!" },
+    { "id": "U013", "name": "ER Desk - Medway Hospitals Kodambakkam", "email": "staff_h013@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H013", "password_plain": "Password123!" },
+    { "id": "U014", "name": "ER Desk - Chennai National Hospital", "email": "staff_h014@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H014", "password_plain": "Password123!" },
+    { "id": "U015", "name": "ER Desk - Brain and Spine Hospital CIT Nagar", "email": "staff_h015@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H015", "password_plain": "Password123!" },
+    { "id": "U016", "name": "ER Desk - Cloudnine Hospital OMR Thoraipakkam", "email": "staff_h016@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H016", "password_plain": "Password123!" },
+    { "id": "U017", "name": "ER Desk - Motherhood Hospital Alwarpet", "email": "staff_h017@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H017", "password_plain": "Password123!" },
+    { "id": "U018", "name": "ER Desk - Government Kasturba Gandhi Hospital for Women and Children", "email": "staff_h018@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H018", "password_plain": "Password123!" },
+    { "id": "U019", "name": "ER Desk - Government Royapettah Hospital", "email": "staff_h019@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H019", "password_plain": "Password123!" },
+    { "id": "U020", "name": "ER Desk - St Thomas Hospital", "email": "staff_h020@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H020", "password_plain": "Password123!" },
+    { "id": "U021", "name": "ER Desk - Sugam Hospital Tiruvottiyur", "email": "staff_h021@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H021", "password_plain": "Password123!" },
+    { "id": "U022", "name": "ER Desk - Mother's Speciality Hospital Ambattur", "email": "staff_h022@hospital.er", "phone": "", "role": "hospital_staff", "entity_id": "H022", "password_plain": "Password123!" }
+  ],
+  "ambulances": [
+    { "id": "A001", "plate": "TN09 AB 1001", "status": "free", "current_request_id": null, "lat": 13.071598, "lng": 80.258759, "last_seen": null, "base_area": "Egmore" },
+    { "id": "A002", "plate": "TN09 AB 1002", "status": "free", "current_request_id": null, "lat": 13.043326, "lng": 80.246273, "last_seen": null, "base_area": "T Nagar" },
+    { "id": "A003", "plate": "TN09 AB 1003", "status": "free", "current_request_id": null, "lat": 12.99394, "lng": 80.252784, "last_seen": null, "base_area": "Adyar" },
+    { "id": "A004", "plate": "TN09 AB 1004", "status": "free", "current_request_id": null, "lat": 13.048759, "lng": 80.181422, "last_seen": null, "base_area": "Anna Nagar" },
+    { "id": "A005", "plate": "TN09 AB 1005", "status": "free", "current_request_id": null, "lat": 12.929512, "lng": 80.119479, "last_seen": null, "base_area": "Tambaram" },
+    { "id": "A006", "plate": "TN09 AB 1006", "status": "free", "current_request_id": null, "lat": 12.963119, "lng": 80.245803, "last_seen": null, "base_area": "Perungudi" },
+    { "id": "A007", "plate": "TN09 AB 1007", "status": "free", "current_request_id": null, "lat": 13.165229, "lng": 80.303256, "last_seen": null, "base_area": "Tiruvottiyur" },
+    { "id": "A008", "plate": "TN09 AB 1008", "status": "free", "current_request_id": null, "lat": 13.121067, "lng": 80.14978, "last_seen": null, "base_area": "Ambattur" },
+    { "id": "A009", "plate": "TN09 AB 1009", "status": "free", "current_request_id": null, "lat": 13.038238, "lng": 80.257136, "last_seen": null, "base_area": "Mylapore" },
+    { "id": "A010", "plate": "TN09 AB 1010", "status": "free", "current_request_id": null, "lat": 13.012147, "lng": 80.196444, "last_seen": null, "base_area": "St Thomas Mount" }
+  ]
+}
